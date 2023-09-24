@@ -19,6 +19,3 @@ class Agent:
         self.data.update({"schedule" : scheduler(str(self.data))})
         if self.debug: print("Generated Schedule")
         return self.data
-
-x = Agent("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", True)
-print(str(x._generate()))
