@@ -27,24 +27,24 @@ def scheduler(person):
             You must follow this format for each event <[event_name] @ [event_location] f/ [startTime] - [endTime] via [transportation]> for it to be parsed correctly. 
             You can add multiple events with a new line.
             Format starts and ends in military time without colons.
-            IE: 7:20 AM is 720, and 2:00 PM is 1400 Be incredibly descriptive. Do not add anything not encapsulated in <>.\
+            IE: 7:20 AM is 720, and 2:00 PM is 1400 Be incredibly descriptive. Do not add anything not encapsulated in <>.
 
             Example:
-            <[Morning Jog @ terrace f/ 600 - 700 via Walk]>
-            <[Morning Prayers @ house f/ 710 - 730 via Walk]>
-            <[Breakfast @ house f/ 740 - 810 via Walk]>
-            <[Drive to Work @ commercial f/ 830 - 900 via Car]>
-            <[Work @ commercial f/ 900 - 1300 via Walk]>
-            <[Lunchtime @ retail f/ 1300 - 1400 via Walk]>
-            <[Work @ commercial f/ 1400 - 1800 via Walk]>
-            <[Drive Home @ house f/ 1800 - 1830 via Car]>
-            <[Evening Prayers @ house f/ 1830 - 1900 via Walk]>
-            <[Dinner @ house f/ 1930 - 2030 via Walk]>
-            <[Family time @ house f/ 2040 - 2200 via Walk]>
-            <[Night Prayers @ house f/ 2210 - 2230 via Walk]>
-            <[Bedtime @ house f/ 2300 - 600 via Walk]>
+            <[Morning jog for exercise, as the doctor said they had to improve their heart health @ terrace f/ 600 - 700 via Walk]>
+            <[Morning Prayers at home, a daily ritual for inner peace and reflection @ house f/ 710 - 730 via Walk]>
+            <[Breakfast at home, a hearty meal to start the day right @ house f/ 740 - 810 via Walk]>
+            <[Drive to Work, the daily commute to the bustling office @ commercial f/ 830 - 900 via Car]>
+            <[Work at office, a productive day in the corporate world @ commercial f/ 900 - 1300 via Walk]>
+            <[Lunchtime at the local restaurant, a quick and tasty bite @ retail f/ 1300 - 1400 via Walk]>
+            <[Work at the office, the afternoon hustle @ commercial f/ 1400 - 1800 via Walk]>
+            <[Drive Home, the return journey to the cozy haven @ house f/ 1800 - 1830 via Car]>
+            <[Evening Prayers at home, a serene moment of spirituality @ house f/ 1830 - 1900 via Walk]>
+            <[Dinner at home, a delightful family mealtime @ house f/ 1930 - 2030 via Walk]>
+            <[Family time at home, bonding and making memories @ house f/ 2040 - 2200 via Walk]>
+            <[Night Prayers at home, a peaceful evening ritual @ house f/ 2210 - 2230 via Walk]>
+            <[Bedtime at home, a well-deserved rest after a long day @ house f/ 2300 - 600 via Walk]>
             """},
-            {"role": "user", "content": str(person)}
+            {"role": "user", "content": str(person) + "Make sure you factor in the demographic of the person; make their activities fit who they are. For example, if someone lives in a small town they might have a long drive, if they are unhealthy they might eat 4 meals, etc."}
         ],
     )
     
