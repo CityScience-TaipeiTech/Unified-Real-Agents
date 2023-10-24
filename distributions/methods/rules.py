@@ -23,7 +23,7 @@ def rules(auxillary):
         # Makes sure age and weight aren't too weird.
         if auxillary["age"] < 12 and auxillary["weight"] == "Obese":
             while auxillary["weight"] == "Obese":
-                auxillary["weight"] = getRandom("gaussian", data["weight"])
+                auxillary["weight"] = getRandom("weighted", data["weight"])
         # Makes sure nothing weird happens with education levels.
         if auxillary["age"] < 28:
             while edulevels[4] in auxillary["education"]:
