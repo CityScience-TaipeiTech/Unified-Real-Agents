@@ -19,3 +19,11 @@ class Agent:
         self.data.update({"schedule" : scheduler(str(self.data))})
         if self.debug: print("Generated Schedule")
         return self.data
+
+""" Demo 
+x = Agent("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")
+person = x._generate()
+for item in person["schedule"]: 
+    for bit in item: 
+        print(bit + ": " + item[bit])
+"""
