@@ -61,6 +61,60 @@ def scheduler(person):
             <[Night skincare routine at home, taking care of skin before bed @ house f/ 2300 - 2330 via Walk]>
             <[Meditation before sleep, calming the mind for a peaceful sleep @ house f/ 2330 - 2400 via Walk]>
             <[Bedtime at home in the bedroom, a well-deserved rest after a long day, reading a book before sleep @ house f/ 2400 - 530 via Walk]>
+            
+            Example 2
+
+            <[Waking up and a few gentle stretches, easing into the day @ house f/ 900 - 915 via Stroll]>
+<[Slow breakfast preparation in the kitchen, no rush, and no-fuss @ house f/ 915 - 945 via Stroll]>
+<[Enjoying a leisurely breakfast, sipping coffee and taking your time @ house f/ 945 - 1015 via Stroll]>
+<[Casual reading or watching TV, no specific agenda @ house f/ 1015 - 1130 via Stroll]>
+<[Lunchtime, prepare a simple meal without any rush @ house f/ 1130 - 1200 via Stroll]>
+<[Relaxing on the couch, maybe watching a favorite show @ house f/ 1200 - 1300 via Stroll]>
+<[A short afternoon nap, a little siesta for relaxation @ house f/ 1300 - 1400 via Stroll]>
+<[Slow stroll in the garden, take in the fresh air @ house f/ 1400 - 1430 via Stroll]>
+<[Indulge in a hobby or creative project at your own pace @ house f/ 1430 - 1600 via Stroll]>
+<[Dinner preparation, no rush, cook a comforting meal @ house f/ 1600 - 1700 via Stroll]>
+<[Enjoying a relaxed dinner, savoring the flavors @ house f/ 1700 - 1800 via Stroll]>
+<[Post-dinner relaxation, perhaps listening to music @ house f/ 1800 - 1900 via Stroll]>
+<[Catching up on a favorite series or movie @ house f/ 1900 - 2100 via Stroll]>
+<[A quiet evening, no agenda, just unwind @ house f/ 2100 - 2200 via Stroll]>
+<[Late-night snack and a glass of wine @ house f/ 2200 - 2230 via Stroll]>
+<[Reading or light journaling, no pressure, just thoughts @ house f/ 2230 - 2300 via Stroll]>
+<[Getting ready for bed and a peaceful night's sleep @ house f/ 2300 - 900 via Stroll]>
+
+Example 3
+
+            <[Waking up and morning stretches, starting the day with a healthy dose of exercise @ house f/ 600 - 630 via Walk]>
+<[Yoga and meditation for mental clarity and relaxation @ garden f/ 630 - 700 via Walk]>
+<[Breakfast preparation in the kitchen, whipping up a nutritious smoothie @ house f/ 700 - 710 via Walk]>
+<[Enjoying a delicious breakfast in the dining room, sipping on a fruit smoothie @ house f/ 710 - 730 via Walk]>
+<[Clean up and tidy the kitchen, ensuring everything is in order @ house f/ 730 - 740 via Walk]>
+<[Heading to the local library, spending time reading and exploring new books @ public library f/ 740 - 800 via Walk]>
+<[Meeting a friend for a morning coffee, catching up and sharing stories @ cafe f/ 800 - 830 via Walk]>
+<[Back to the library for more reading and research @ public library f/ 830 - 900 via Walk]>
+<[Running errands, grocery shopping for the week's essentials @ supermarket f/ 900 - 930 via Walk]>
+<[Returning home and unpacking groceries, organizing the kitchen @ house f/ 930 - 940 via Walk]>
+<[Preparation for an online class, setting up the study area for learning @ house f/ 940 - 1000 via Walk]>
+<[Participating in an online class, gaining new knowledge and skills @ house f/ 1000 - 1200 via Walk]>
+<[Lunch break, a quick and healthy homemade meal @ house f/ 1200 - 1230 via Walk]>
+<[Continuing the online class and absorbing information @ house f/ 1230 - 1400 via Walk]>
+<[Taking a short break for some fresh air and a leisurely walk @ nearby park f/ 1400 - 1415 via Walk]>
+<[Resuming the online class, focusing on the lesson at hand @ house f/ 1415 - 1500 via Walk]>
+<[Completing the class and reviewing the material @ house f/ 1500 - 1530 via Walk]>
+<[Unwinding with a cup of herbal tea and a good book, a moment of relaxation @ house f/ 1530 - 1600 via Walk]>
+<[Engaging in a creative hobby, working on a painting project @ house f/ 1600 - 1700 via Walk]>
+<[Dinner preparation in the kitchen, experimenting with a new recipe @ house f/ 1700 - 1745 via Walk]>
+<[Enjoying a flavorful dinner in the dining room, savoring the culinary creation @ house f/ 1745 - 1830 via Walk]>
+<[Cleaning up and tidying the kitchen after dinner @ house f/ 1830 - 1845 via Walk]>
+<[Joining a virtual game night with friends, laughter and competition @ house f/ 1845 - 2100 via Walk]>
+<[Wind down with a relaxing bath, soaking in tranquility @ house f/ 2100 - 2130 via Walk]>
+<[Evening skincare routine, taking care of the skin's well-being @ house f/ 2130 - 2145 via Walk]>
+<[Reflecting and journaling, capturing the day's thoughts and experiences @ house f/ 2145 - 2200 via Walk]>
+<[Nighttime prayers for gratitude and peace @ house f/ 2200 - 2230 via Walk]>
+<[Meditation and mindfulness practice, preparing for a restful night @ house f/ 2230 - 2300 via Walk]>
+<[Heading to bed, ready for a rejuvenating night's sleep @ house f/ 2300 - 600 via Walk]>
+
+
             """},
             {"role": "user", "content": str(person) + "Make sure you factor in the demographic of the person; make their activities fit who they are. For example, if someone lives in a small town they might have a long drive, if they are unhealthy they might eat 4 meals, etc."}
         ],
