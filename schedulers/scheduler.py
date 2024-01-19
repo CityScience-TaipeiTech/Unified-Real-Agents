@@ -1,5 +1,13 @@
 import openai, re
 
+from openai import OpenAI
+
+# Create an OpenAI client with your deepinfra token and endpoint
+openai = OpenAI(
+    api_key="cYnRRkRj72ybGZQeLc527kwWrQTQTpt9",
+    base_url="https://api.deepinfra.com/v1/openai",
+)
+
 def parse_schedule(schedule):
     event_list = []
 
@@ -17,8 +25,8 @@ def parse_schedule(schedule):
     return event_list
 
 def scheduler(person):
-    textQuery = openai.ChatCompletion.create(
-        model="gpt-4-0613",
+    textQuery = openai.chat.completions.create(
+        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
         messages=[
             {"role" : "system", "content" : "Follow all instructions."},
             {"role" : "system", "content" : "These are the buildings that you have available. You can not deviate from these. {'', 'greenhouse', 'terrace', 'university', 'yes', 'hotel', 'garage', 'warehouse', 'house', 'supermarket', 'public', 'kindergarten', 'industrial', 'college', 'roof', 'carport', 'static_railcar', 'bridge', 'dormitory', 'shed', 'residential', 'parking', 'train_station', 'grandstand', 'civic', 'retail', 'church', 'garages', 'temple', 'boathouse', 'detached', 'government', 'fire_station', 'construction', 'commercial', 'semidetached_house', 'hospital', 'sports_centre', 'kiosk', 'toilets', 'sports_hall', 'water_works', 'no', 'office', 'apartments', 'canopy', 'service', 'school'}"},
@@ -120,5 +128,5 @@ Example 3
         ],
     )
     
-    data = textQuery["choices"][0]["message"]["content"]
+    data = textQuery.choices[0].message.content
     return parse_schedule(data)
